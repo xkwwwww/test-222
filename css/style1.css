@@ -112,6 +112,9 @@ a {
 
 .list {
   display: flex;
+  justify-self: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
   flex-wrap: wrap;
   gap: 50px;
   font-size: 18px;
@@ -136,13 +139,15 @@ a {
 }
 
 .list-wrapper {
+  display: flex;
+  flex-direction: column;
   padding: 0 80px;
 }
 
 .back-to-index1 {
   margin-right: 570px;
   padding-left: 30px;
-  background-image: url(../../../projects/test1/img/return.png);
+  background-image: url(/img/return.png);
   background-position: left center;
   background-size: 20px 20px;
   background-repeat: no-repeat;
@@ -172,6 +177,7 @@ a {
 
 .list-content {
   padding: 50px;
+  background-color: white;
 }
 
 ul {
@@ -188,21 +194,37 @@ ul {
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
+
 .button {
-  display:inline-block;
+  align-self: center;
   justify-content: center;
-  margin-left: 1100px;
-  margin-top: 100px;
-  padding: 20px 40px 20px 40px;
+  padding: 22px 50px 22px 50px;
   text-align: center;
   border: #2f1ce4 solid 5px;
-}
-.button-1 {
   font-size: 18px;
+  font-weight: bold;
   color: #2f1ce4;
   background: white;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
+
+.button:hover {
+  background: #2f1ce4;
+  color: #fff;
+}
+
 .modules-body {
   background-image: url(../img/wave.png);
   background-repeat: no-repeat;
+  background-position: bottom;
+  padding-bottom: 600px;
+  background-size: contain;
+}
+
+button {
+  border: 0;
+}
+.header-4 {
+  padding-top: 50px;
 }
